@@ -8,7 +8,7 @@ int ocupado(int x, int y,) {
     return 0
 }
 
-int exibamapa (int maxX, maxY,) {
+void exibamapa (int maxX, maxY,) {
     printf(mapa %dx%d:\n, maxX, maxY);
     for (int y=0; y<maxY; y++) {
         for (int x=0; x<maxX; x++) {
