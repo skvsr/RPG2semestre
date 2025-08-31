@@ -13,10 +13,10 @@ void exibamapa (int maxX, maxY,) {
     for (int y=0; y<maxY; y++) {
         for (int x=0; x<maxX; x++) {
             char c= '.';
-            if (p && p->x==x && p->y==y) c='p';
+            if (p && p->x==x && p->y==y) c='J';
             else {
                 if (inimigo) for (int i=0;i<numinimigo;i++) if (inimigo[i].vivo && inimigo[i].x==x && inimigo[i].y==y) {c='I'; break;}
-                if (c=='.' && item) for (int i=0;i<numitem;i++) if (item[i].ativo && item[i].x==x && item[i]. y==y {c='T'; break;}
+                if (c=='.' && item) for (int i=0;i<numitem;i++) if (item[i].ativo && item[i].x==x && item[i]. y==y {c='P'; break;}
             }
             printf("%c ", c);
         }
