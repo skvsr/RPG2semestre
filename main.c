@@ -57,7 +57,8 @@ void combate(Inimigo *inimigo) {
 }
 
 // Funçao de movimento
-void movimentação(char mover) {
+
+void movimentacao(char mover) {
     int dx = 0, dy = 0;
     if (mover == "w") dy = jogador.velocidade;
     else if (mover == "s") dy = jogador.velocidade;
