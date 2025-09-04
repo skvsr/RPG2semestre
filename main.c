@@ -40,6 +40,35 @@ int carregar() {
     return 1;
 }
 
+
+//Função para criar o mapa
+
+void mapa() {
+    for (int i = 0; i < altura; i++) {
+        for (int j = 0; j < largura; j++) {
+            int jogador.x == j && jogador.y == i {
+                printf("J")
+            } else {
+                int ocupado = 0;
+                for (int k = 0; k < x; k++) {
+                    if (inimigo[k].vivo && inimigo[k].x == j && inimigo[k].y == i) {
+                        printf("I");
+                        ocupado = 1;
+                        break;
+                    }
+                    if (item[k].ativo && item[k].x == j && item[k].y == i) {
+                        printf("-");
+                        ocupado = 1;
+                        break;
+                    }
+                }
+                if (!ocupado) printf(".");
+            }
+        }
+        printf("\n");
+    }
+}
+
 //Funcão para o combate
 
 void combate(Inimigo *inimigo) {
